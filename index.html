@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link  defer rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="for-button">
+          <button type="button" data-add class="btn btn-primary main btn-add">Add cat</button>
+        </div>
+        <div data-wr class="container__inner">
+        </div>
+    </div>
+
+    <div data-add_modal class="modal" tabindex="-1">
+      <div class="modal show" id="card__delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <form data-add_form>
+                <div class="mb-3">
+                  <label for="add-id" class="col-form-label">id:</label>
+                  <input type="text" class="form-control" id="add-id">
+                </div>
+                <div class="mb-3">
+                  <label for="add-age" class="col-form-label">age:</label>
+                  <input type="number"  min="0"   class="form-control" id="add-age"></input>
+                </div>
+                <div class="mb-3">
+                  <label for="add-name" class="col-form-label">name:</label>
+                  <input type="text"  class="form-control" id="add-name"></input>
+                </div>
+                <div class="mb-3">
+                  <label for="add-rate" class="col-form-label">rate:</label>
+                  <input type="number"  min="0" max="10" class="form-control" id="add-rate"></input>
+                </div>
+                <div class="mb-3">
+                  <label for="add-description" class="col-form-label">description:</label>
+                  <textarea class="form-control" id="add-description"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="add-favourite" class="col-form-label">favourite:</label>
+                  <input class="" id="add-favourite" data-add-favourite type="checkbox">
+                </div>
+                <div class="mb-3">
+                  <label for="add-img" class="col-form-label">img:</label>
+                  <textarea class="form-control" id="add-img"></textarea>
+                  
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button data-modal_close type="button" class="btn btn-danger">Close</button>
+              <button data-add_add type="button" class="btn btn-primary">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-change_modal class="modal" tabindex="-1">
+      <div class="modal show" id="card__open" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img data-change_photo src="" class="card-img-top" alt="Without image">
+              <form data-change_form>
+                <div class="mb-3">
+                  <label for="change-id" class="col-form-label">id:</label>
+                  <input type="text" class="form-control" id="change-id" data-change_id readonly>
+                </div>
+                <div class="mb-3">
+                  <label for="change-age" class="col-form-label">age:</label>
+                  <input type="number"  min="0"   class="form-control" id="change-age" data-change_age></input>
+                </div>
+                <div class="mb-3">
+                  <label for="change-name" class="col-form-label">name:</label>
+                  <input type="text"  class="form-control" id="change-name" data-change_name readonly></input>
+                </div>
+                <div class="mb-3">
+                  <label for="change-rate" class="col-form-label">rate:</label>
+                  <input type="number"  min="0" max="10" class="form-control" id="change-rate" data-change_rate></input>
+                </div>
+                <div class="mb-3">
+                  <label for="change-description" class="col-form-label">description:</label>
+                  <textarea class="form-control" id="change-description" data-change_description></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="change-favourite" class="col-form-label">favourite:</label>
+                  <input class="" id="change-favourite" data-change-favourite type="checkbox">
+                </div>
+                <div class="mb-3">
+                  <label for="change-img" class="col-form-label">img:</label>
+                  <textarea class="form-control" id="change-img" data-change_img></textarea>
+                  
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button data-change_close type="button" class="btn btn-danger">Close</button>
+              <button data-change_apply type="button" class="btn btn-primary">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

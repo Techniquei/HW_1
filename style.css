@@ -1,0 +1,80 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    
+    color: black;
+    
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin:0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 5rem auto;
+}
+
+.container__inner{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 1rem;
+    
+}
+
+.card{
+    width: 30rem;
+   
+}
+
+.main__button{
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.btn{
+    font-size: 1.3rem;
+}
+
+.modal{
+    display:  none;
+    font-size: 1.5rem;
+}
+
+.form-control{
+    font-size: inherit;
+}
+
+.show{
+    display: block;
+}
+
+#add-favourite{
+    vertical-align: middle;
+    margin: .5rem;
+    
+}
+
+.for-button{
+    display: flex;
+    justify-content: center;
+}
+
+.for-button button{
+    margin-bottom: 1rem;
+    self
+}
