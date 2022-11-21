@@ -54,7 +54,7 @@ function setCatsToLocale() {
 }
 
 async function getCatsFromApi() {
-  const responce = await fetch('http://sb-cats.herokuapp.com/api/2/techniquei/show')
+  const responce = await fetch('https://sb-cats.herokuapp.com/api/2/techniquei/show')
   const json = await responce.json()
   cats = json.data
   setCatsToLocale()
@@ -102,7 +102,7 @@ $wr.addEventListener('click', (event) => {
   }
   if (target.hasAttribute('data-card_delete')) {
     console.log(`delete button clicked: ${id}`)
-    fetch(`http://sb-cats.herokuapp.com/api/2/techniquei/delete/${id}`, { method: 'DELETE' })
+    fetch(`https://sb-cats.herokuapp.com/api/2/techniquei/delete/${id}`, { method: 'DELETE' })
       .then((responce) => responce.json())
       .then((json) => {
         if (json.message == 'ok') {
@@ -156,7 +156,7 @@ document.body.addEventListener('click', (event) => {
     console.log(editCat_2)
     const editedCat_json = JSON.stringify(editCat_2)
     console.log(editedCat_json)
-    fetch(`http://sb-cats.herokuapp.com/api/2/techniquei/update/${$inputId.getAttribute('placeholder')}`, {
+    fetch(`https://sb-cats.herokuapp.com/api/2/techniquei/update/${$inputId.getAttribute('placeholder')}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -196,7 +196,7 @@ document.body.addEventListener('click', (event) => {
 
     const newCat_json = JSON.stringify(newCat)
     console.log(newCat_json)
-    fetch('http://sb-cats.herokuapp.com/api/2/techniquei/add', {
+    fetch('https://sb-cats.herokuapp.com/api/2/techniquei/add', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
