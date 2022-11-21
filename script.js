@@ -13,6 +13,7 @@ const inputFavourite = $change_modal.querySelector('[data-change-favourite]')
 const inputImg = $change_modal.querySelector('[data-change_img]')
 const inputPhoto = $change_modal.querySelector('[data-change_photo]')
 
+
 // MODAL ADD
 const $add_modal = document.querySelector('[data-add_modal]')
 const $add_form = document.querySelector('[data-add_form]')
